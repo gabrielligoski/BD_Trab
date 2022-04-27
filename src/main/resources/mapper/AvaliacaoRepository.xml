@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bd_trab.repository.AvaliacaoRepository">
+    <resultMap id="BaseResultMap" type="com.example.bd_trab.entity.Avaliacao">
+        <!--@JPA.Support generated on 2022-04-24 12:27:16.-->
+        <!--@Table avaliacao-->
+        <id column="id_produto" jdbcType="INTEGER" property="idProduto"/>
+        <result column="titulo" jdbcType="VARCHAR" property="titulo"/>
+        <result column="opniao_geral" jdbcType="VARCHAR" property="opniaoGeral"/>
+        <result column="pros" jdbcType="VARCHAR" property="pros"/>
+        <result column="contras" jdbcType="VARCHAR" property="contras"/>
+        <result column="estrelas" jdbcType="INTEGER" property="estrelas"/>
+        <result column="data" jdbcType="DATE" property="data"/>
+        <result column="id_cliente" jdbcType="VARCHAR" property="idCliente"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2022-04-24 12:27:16.-->
+        id_produto, titulo, opniao_geral, pros, contras, estrelas, `data`, id_cliente
+    </sql>
+</mapper>

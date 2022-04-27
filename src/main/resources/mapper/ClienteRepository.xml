@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bd_trab.repository.ClienteRepository">
+    <resultMap id="BaseResultMap" type="com.example.bd_trab.entity.Cliente">
+        <!--@JPA.Support generated on 2022-04-24 12:27:17.-->
+        <!--@Table cliente-->
+        <id column="cpf" jdbcType="VARCHAR" property="cpf"/>
+        <result column="nome" jdbcType="VARCHAR" property="nome"/>
+        <result column="telefone" jdbcType="VARCHAR" property="telefone"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2022-04-24 12:27:17.-->
+        cpf, nome, telefone, email
+    </sql>
+</mapper>

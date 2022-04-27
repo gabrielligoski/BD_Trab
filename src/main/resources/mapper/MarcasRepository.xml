@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bd_trab.repository.MarcasRepository">
+    <resultMap id="BaseResultMap" type="com.example.bd_trab.entity.Marcas">
+        <!--@JPA.Support generated on 2022-04-24 20:18:09.-->
+        <!--@Table marcas-->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="nome" jdbcType="VARCHAR" property="nome"/>
+        <result column="contato" jdbcType="VARCHAR" property="contato"/>
+        <result column="cnpj" jdbcType="VARCHAR" property="cnpj"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2022-04-24 20:18:09.-->
+        id, nome, contato, cnpj
+    </sql>
+</mapper>

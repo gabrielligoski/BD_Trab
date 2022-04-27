@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bd_trab.repository.PedidoRepository">
+    <resultMap id="BaseResultMap" type="com.example.bd_trab.entity.Pedido">
+        <!--@JPA.Support generated on 2022-04-24 12:27:19.-->
+        <!--@Table pedido-->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="id_produto" jdbcType="INTEGER" property="idProduto"/>
+        <result column="cpf_cliente" jdbcType="VARCHAR" property="cpfCliente"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+        <result column="codigo_rastreio" jdbcType="VARCHAR" property="codigoRastreio"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2022-04-24 12:27:19.-->
+        id, id_produto, cpf_cliente, `status`, codigo_rastreio
+    </sql>
+</mapper>

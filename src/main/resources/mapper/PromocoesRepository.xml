@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bd_trab.repository.PromocoesRepository">
+    <resultMap id="BaseResultMap" type="com.example.bd_trab.entity.Promocoes">
+        <!--@JPA.Support generated on 2022-04-24 12:27:21.-->
+        <!--@Table promocoes-->
+        <result column="id_produto" jdbcType="INTEGER" property="idProduto"/>
+        <result column="desconto" jdbcType="INTEGER" property="desconto"/>
+        <result column="parcelamento" jdbcType="INTEGER" property="parcelamento"/>
+        <id column="codigo_promocional" jdbcType="VARCHAR" property="codigoPromocional"/>
+        <result column="vencimento" jdbcType="DATE" property="vencimento"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2022-04-24 12:27:21.-->
+        id_produto, desconto, parcelamento, codigo_promocional, vencimento
+    </sql>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bd_trab.repository.ProdutoRepository">
+    <resultMap id="BaseResultMap" type="com.example.bd_trab.entity.Produto">
+        <!--@JPA.Support generated on 2022-04-24 12:27:20.-->
+        <!--@Table produto-->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="nome" jdbcType="VARCHAR" property="nome"/>
+        <result column="descricao" jdbcType="VARCHAR" property="descricao"/>
+        <result column="categoria" jdbcType="VARCHAR" property="categoria"/>
+        <result column="preco" jdbcType="FLOAT" property="preco"/>
+        <result column="quantidade_estoque" jdbcType="INTEGER" property="quantidadeEstoque"/>
+        <result column="imagem" jdbcType="LONGVARBINARY" property="imagem"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2022-04-24 12:27:20.-->
+        id, nome, descricao, categoria, preco, quantidade_estoque, imagem
+    </sql>
+</mapper>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.bd_trab.repository.DestaquesRepository">
+    <resultMap id="BaseResultMap" type="com.example.bd_trab.entity.Destaques">
+        <!--@JPA.Support generated on 2022-04-24 20:18:08.-->
+        <!--@Table destaques-->
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="id_produto" jdbcType="INTEGER" property="idProduto"/>
+        <result column="fim_destaque" jdbcType="DATE" property="fimDestaque"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2022-04-24 20:18:08.-->
+        id, id_produto, fim_destaque
+    </sql>
+</mapper>
